@@ -45,7 +45,8 @@ function moverNo(boton) {
     boton.style.top = Math.random() * maxY + 20 + 'px'; // Añade margen superior
 
     intentos++;
-    if (intentos === 5) {
+    if (intentos === 3) { // Cambia este número para ajustar los intentos
+        boton.style.display = 'none'; // Hace que el botón desaparezca
         alert("¡Vas a tener que decir que sí en algún momento! 😄");
     }
 }
